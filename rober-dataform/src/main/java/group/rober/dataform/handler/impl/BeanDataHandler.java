@@ -3,16 +3,13 @@ package group.rober.dataform.handler.impl;
 import group.rober.dataform.exception.DataFormException;
 import group.rober.dataform.model.DataForm;
 import group.rober.dataform.model.DataFormElement;
-import group.rober.dataform.util.DataFormUtils;
-import group.rober.dataform.validator.ValidateResult;
-import group.rober.runtime.kit.*;
 import group.rober.sql.core.DataAccessor;
+import group.rober.runtime.kit.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.RowMapper;
-import org.springframework.jdbc.support.JdbcUtils;
 
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;

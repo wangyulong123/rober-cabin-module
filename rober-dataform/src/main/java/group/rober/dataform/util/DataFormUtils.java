@@ -1,36 +1,23 @@
 package group.rober.dataform.util;
 
 import group.rober.dataform.exception.DataFormException;
-import group.rober.dataform.exception.ValidatorException;
 import group.rober.dataform.mapper.impl.po.DataFormElementPO;
 import group.rober.dataform.mapper.impl.po.FormElementValidatorPO;
 import group.rober.dataform.model.DataForm;
 import group.rober.dataform.model.DataFormElement;
-import group.rober.dataform.model.types.ElementValidatorMode;
-import group.rober.dataform.model.types.ElementValidatorRunAt;
 import group.rober.dataform.model.types.FormDataModelType;
-import group.rober.dataform.validator.ValidateRecord;
-import group.rober.dataform.validator.ValidateResult;
-import group.rober.runtime.holder.MessageHolder;
 import group.rober.runtime.kit.BeanKit;
 import group.rober.runtime.kit.ClassKit;
 import group.rober.runtime.kit.StringKit;
 import group.rober.runtime.lang.MapData;
 import group.rober.runtime.lang.PairBond;
 import group.rober.runtime.lang.ValueObject;
-import group.rober.sql.core.DataAccessor;
 import group.rober.sql.core.PaginationData;
 import group.rober.sql.core.PaginationQuery;
-import group.rober.sql.dialect.SqlDialectType;
-import group.rober.sql.kit.SQLInjector;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.util.LinkedCaseInsensitiveMap;
 
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
 import java.util.*;
-import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 /**

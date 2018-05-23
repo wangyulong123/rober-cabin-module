@@ -1,12 +1,9 @@
 package group.rober.office.word;
 
-import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 
 
 import com.aspose.words.Document;
-import com.aspose.words.DocumentBuilder;
-import com.aspose.words.HeaderFooterType;
 import com.aspose.words.License;
 import com.aspose.words.SaveFormat;
 

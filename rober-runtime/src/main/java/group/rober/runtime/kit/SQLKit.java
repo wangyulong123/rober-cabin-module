@@ -98,7 +98,7 @@ public abstract class SQLKit {
 //        return row;
 //    }
 
-    public static List<MapData> getTableMeta(Connection connection,String table){
+    public static List<MapData> getTableMeta(Connection connection, String table){
         List<MapData> retList = ListKit.newArrayList();
         try {
             DatabaseMetaData meta = connection.getMetaData();

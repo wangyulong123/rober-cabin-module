@@ -1,6 +1,5 @@
 package group.rober.sql.kit;
 
-import group.rober.runtime.kit.ListKit;
 import group.rober.runtime.kit.StringKit;
 import group.rober.runtime.lang.PairBond;
 import group.rober.sql.dialect.SqlDialectType;

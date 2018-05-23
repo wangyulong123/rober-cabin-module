@@ -1,11 +1,11 @@
 package group.rober.dataform.mapper;
 
 import group.rober.dataform.BaseTest;
-import group.rober.dataform.entity.Person;
 import group.rober.dataform.handler.impl.PersonBeanDataListHandler;
 import group.rober.dataform.model.DataForm;
 import group.rober.dataform.model.DataFormElement;
 import group.rober.dataform.model.DataFormFilter;
+import group.rober.dataform.entity.Person;
 import group.rober.dataform.model.types.*;
 import group.rober.runtime.kit.JSONKit;
 import group.rober.runtime.kit.MapKit;

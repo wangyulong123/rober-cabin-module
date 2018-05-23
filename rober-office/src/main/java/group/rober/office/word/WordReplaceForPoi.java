@@ -1,10 +1,10 @@
 package group.rober.office.word;
 
+import group.rober.office.word.parameter.ImageParameter;
 import group.rober.office.word.parameter.EmbedImage;
 import group.rober.office.word.parameter.EmbedTable;
 import group.rober.office.word.parameter.EmbedTableCell;
 import group.rober.office.word.parameter.EmbedTableRow;
-import group.rober.office.word.parameter.ImageParameter;
 import group.rober.office.word.parameter.NumberParameter;
 import group.rober.office.word.parameter.StringParameter;
 import group.rober.office.word.parameter.TableParameter;

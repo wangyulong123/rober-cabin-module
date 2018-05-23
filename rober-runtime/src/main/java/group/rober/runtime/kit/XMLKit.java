@@ -1,9 +1,9 @@
 package group.rober.runtime.kit;
 
+import group.rober.runtime.lang.PairBond;
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.StreamException;
 import com.thoughtworks.xstream.io.xml.DomDriver;
-import group.rober.runtime.lang.PairBond;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

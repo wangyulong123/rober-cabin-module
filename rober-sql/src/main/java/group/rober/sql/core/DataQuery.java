@@ -1,6 +1,7 @@
 package group.rober.sql.core;
 
-import group.rober.runtime.kit.*;
+import group.rober.runtime.kit.JpaKit;
+import group.rober.runtime.kit.MapKit;
 import group.rober.sql.core.rowmapper.JpaBeanPropertyRowMapper;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;

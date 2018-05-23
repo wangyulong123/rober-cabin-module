@@ -1,11 +1,11 @@
 package group.rober.sql.serialno;
 
 import group.rober.sql.BaseTest;
-import group.rober.sql.serialno.constants.CursorRecordType;
 import group.rober.sql.serialno.cursor.SerialNoCursorDao;
-import group.rober.sql.serialno.model.SerialNoCursor;
 import group.rober.sql.serialno.finder.SerialNoGeneratorFinder;
 import group.rober.sql.serialno.generator.SerialNoGenerator;
+import group.rober.sql.serialno.model.SerialNoCursor;
+import group.rober.sql.serialno.constants.CursorRecordType;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

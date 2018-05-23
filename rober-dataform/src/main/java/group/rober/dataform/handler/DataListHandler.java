@@ -65,6 +65,6 @@ public interface DataListHandler<T> extends DataObjectHandler {
      * @param dataList
      * @return
      */
-    List<ValidateResult> validate(DataForm dataForm,List<T> dataList);
+    List<ValidateResult> validate(DataForm dataForm, List<T> dataList);
 
 }

@@ -1,14 +1,11 @@
 package group.rober.dataform.mapper;
 
-import group.rober.dataform.BaseTest;
-import group.rober.dataform.mapper.impl.DataFormMapperDBTableImpl;
 import group.rober.dataform.model.DataForm;
+import group.rober.dataform.BaseTest;
 import group.rober.runtime.kit.JSONKit;
-import group.rober.sql.core.DataAccessor;
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 
 import java.util.List;
 

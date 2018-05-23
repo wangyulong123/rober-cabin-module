@@ -1,12 +1,12 @@
 package group.rober.sql.autoconfigure;
 
-import group.rober.sql.core.DataAccessor;
-import group.rober.sql.core.DataQuery;
 import group.rober.sql.core.DataUpdater;
 import group.rober.sql.core.MapDataAccessor;
-import group.rober.sql.core.MapDataQuery;
 import group.rober.sql.core.MapDataUpdater;
 import group.rober.sql.serialno.finder.SerialNoGeneratorFinder;
+import group.rober.sql.core.DataAccessor;
+import group.rober.sql.core.DataQuery;
+import group.rober.sql.core.MapDataQuery;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;

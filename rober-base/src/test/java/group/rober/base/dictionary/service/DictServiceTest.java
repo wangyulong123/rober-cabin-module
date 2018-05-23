@@ -1,9 +1,9 @@
 package group.rober.base.dictionary.service;
 
-import group.rober.base.BaseTest;
-import group.rober.base.dict.model.DictEntry;
 import group.rober.base.dict.model.DictItemEntry;
 import group.rober.base.dict.service.DictService;
+import group.rober.base.BaseTest;
+import group.rober.base.dict.model.DictEntry;
 import org.junit.Assert;
 import org.junit.FixMethodOrder;
 import org.junit.Test;

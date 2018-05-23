@@ -4,6 +4,7 @@ import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
+import group.rober.office.autoconfigure.OfficeProperties;
 import group.rober.office.pageoffice.PageOfficeCtrl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,7 +12,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.servlet.ModelAndView;
 
 
-import group.rober.office.autoconfigure.OfficeProperties;
 import group.rober.runtime.holder.WebHolder;
 import group.rober.runtime.kit.MapKit;
 

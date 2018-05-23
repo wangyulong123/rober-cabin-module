@@ -2,10 +2,10 @@ package group.rober.dataform.handler.impl;
 
 import group.rober.dataform.BaseTest;
 import group.rober.dataform.TestData;
-import group.rober.dataform.mapper.DataFormMapperTest;
 import group.rober.dataform.model.DataForm;
 import group.rober.dataform.model.DataFormElement;
 import group.rober.dataform.model.types.ElementDataType;
+import group.rober.dataform.mapper.DataFormMapperTest;
 import group.rober.runtime.kit.MapKit;
 import group.rober.runtime.lang.MapData;
 import org.junit.Assert;

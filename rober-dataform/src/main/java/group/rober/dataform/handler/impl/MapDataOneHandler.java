@@ -1,9 +1,9 @@
 package group.rober.dataform.handler.impl;
 
+import group.rober.dataform.util.DataFormValidateUtils;
 import group.rober.dataform.handler.DataOneHandler;
 import group.rober.dataform.model.DataForm;
 import group.rober.dataform.model.DataFormElement;
-import group.rober.dataform.util.DataFormValidateUtils;
 import group.rober.dataform.validator.ValidateResult;
 import group.rober.runtime.kit.ValidateKit;
 import group.rober.runtime.lang.MapData;

@@ -1,11 +1,11 @@
 package group.rober.sql.serialno.cursor.impl;
 
-import group.rober.sql.serialno.constants.CursorRecordType;
 import group.rober.sql.serialno.cursor.SerialNoCursorDao;
 import group.rober.sql.serialno.cursor.mapper.SerialNoCursorMapper;
 import group.rober.sql.serialno.model.BatchIncreaseBean;
 import group.rober.sql.serialno.model.SerialNoCursor;
 import group.rober.sql.serialno.model.SingleIncreaseBean;
+import group.rober.sql.serialno.constants.CursorRecordType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

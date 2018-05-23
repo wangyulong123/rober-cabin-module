@@ -1,9 +1,8 @@
 package group.rober.base.dict.service;
 
+import group.rober.base.dict.model.DictItemNode;
 import group.rober.base.dict.model.DictEntry;
 import group.rober.base.dict.model.DictItemEntry;
-import group.rober.base.dict.model.DictItemNode;
-import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 

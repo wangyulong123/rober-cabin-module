@@ -5,9 +5,12 @@ import group.rober.base.dict.model.DictItemEntry;
 import group.rober.base.dict.model.DictItemNode;
 import group.rober.base.dict.service.DictService;
 import group.rober.dataform.model.DataFormElement;
+import group.rober.runtime.kit.ListKit;
+import group.rober.runtime.kit.MapKit;
+import group.rober.runtime.kit.StringKit;
+import group.rober.runtime.kit.TreeNodeKit;
 import group.rober.dataform.model.types.ElementDataDictCodeMode;
 import group.rober.dataform.model.types.ElementDataEditStyle;
-import group.rober.runtime.kit.*;
 import group.rober.runtime.lang.MapData;
 import group.rober.sql.core.MapDataAccessor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +18,6 @@ import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 @Service
 public class DictExprResolve {
@@ -48,7 +50,7 @@ public class DictExprResolve {
      * @param valueList
      * @return
      */
-    public List<DictItemNode> getDictItemsByValue(DataFormElement element,List<String> valueList){
+    public List<DictItemNode> getDictItemsByValue(DataFormElement element, List<String> valueList){
         List<DictItemNode> itemEntries = null;
         if(element.getElementUIHint().getDictCodeMode() == ElementDataDictCodeMode.DictCode){
             itemEntries = ListKit.newArrayList();

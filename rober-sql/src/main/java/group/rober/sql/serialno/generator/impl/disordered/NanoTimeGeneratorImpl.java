@@ -1,8 +1,8 @@
 package group.rober.sql.serialno.generator.impl.disordered;
 
-import group.rober.sql.serialno.constants.GeneratorType;
 import group.rober.sql.serialno.generator.SerialNoFormatter;
 import group.rober.sql.serialno.generator.SerialNoGenerator;
+import group.rober.sql.serialno.constants.GeneratorType;
 import org.springframework.stereotype.Component;
 
 /**

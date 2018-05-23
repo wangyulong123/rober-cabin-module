@@ -14,7 +14,6 @@ import java.util.List;
 import java.util.Map;
 
 import group.rober.office.excel.imports.config.ExcelImportConfig;
-import group.rober.office.excel.imports.config.ExcelImportConfig.ColumnItem;
 import group.rober.office.excel.imports.intercept.InterceptException;
 import group.rober.office.excel.imports.intercept.InterceptHelper;
 import group.rober.office.excel.reader.ExcelRowData;
@@ -258,12 +257,12 @@ public class DataWriterToTable implements DataWriter<List<ExcelRowData>> {
 
         //		private int insertCount = 0;
         private void insert(ExcelRowData rowData) throws SQLException {
-            List<ColumnItem> items = config.getAllColumnItems();
+            List<ExcelImportConfig.ColumnItem> items = config.getAllColumnItems();
             int idx = 1;
 //			System.out.println(insertCount+"-"+items.size()+":"+rowData);
             logger.trace("插入:" + rowData.toString());
             for (int i = 0; i < items.size(); i++) {
-                ColumnItem item = items.get(i);
+                ExcelImportConfig.ColumnItem item = items.get(i);
                 if (!columnExists(item.getName())) continue;
                 setParameterValue(psInsert, idx++, item, rowData.getDataElement(item.getName()));
             }
@@ -274,17 +273,17 @@ public class DataWriterToTable implements DataWriter<List<ExcelRowData>> {
 
         private void update(ExcelRowData rowData) throws SQLException {
             logger.trace("更新:" + rowData.toString());
-            List<ColumnItem> items = config.getAllColumnItems();
+            List<ExcelImportConfig.ColumnItem> items = config.getAllColumnItems();
             int idx = 1;
             for (int i = 0; i < items.size(); i++) {
-                ColumnItem item = items.get(i);
+                ExcelImportConfig.ColumnItem item = items.get(i);
                 if (!inKeyColumns(item.getName())) {
                     if (!columnExists(item.getName())) continue;
                     setParameterValue(psUpdate, idx++, item, rowData.getDataElement(item.getName()));
                 }
             }
             for (int i = 0; i < items.size(); i++) {
-                ColumnItem item = items.get(i);
+                ExcelImportConfig.ColumnItem item = items.get(i);
                 if (inKeyColumns(item.getName())) {
                     if (!columnExists(item.getName())) continue;
                     setParameterValue(psUpdate, idx++, item, rowData.getDataElement(item.getName()));
@@ -302,7 +301,7 @@ public class DataWriterToTable implements DataWriter<List<ExcelRowData>> {
          * @param element
          * @throws SQLException
          */
-        private void setParameterValue(PreparedStatement ps, int index, ColumnItem item, ValueObject element) throws SQLException {
+        private void setParameterValue(PreparedStatement ps, int index, ExcelImportConfig.ColumnItem item, ValueObject element) throws SQLException {
 
             int dataType = getColumnDataType(item.getName());
             switch (dataType) {
@@ -398,14 +397,14 @@ public class DataWriterToTable implements DataWriter<List<ExcelRowData>> {
          * @throws SQLException
          */
         private void initPSInsert() throws SQLException {
-            List<ColumnItem> items = config.getAllColumnItems();
+            List<ExcelImportConfig.ColumnItem> items = config.getAllColumnItems();
             StringBuilder sbSQL = new StringBuilder();
             sbSQL.append("insert into ").append(config.getTable());
             sbSQL.append("(");
             //字段部分
             for (int i = 0; i < items.size(); i++) {
                 if (!columnExists(items.get(i).getName())) continue;
-                ColumnItem item = items.get(i);
+                ExcelImportConfig.ColumnItem item = items.get(i);
                 if (i != 0) sbSQL.append(",");
                 sbSQL.append(item.getName());
             }
@@ -430,7 +429,7 @@ public class DataWriterToTable implements DataWriter<List<ExcelRowData>> {
          * @throws SQLException
          */
         private void initPSUpdate() throws SQLException {
-            List<ColumnItem> items = config.getAllColumnItems();
+            List<ExcelImportConfig.ColumnItem> items = config.getAllColumnItems();
             StringBuilder sbSQL = new StringBuilder();
             sbSQL.append("update ").append(config.getTable());
             sbSQL.append(" set ");
@@ -439,7 +438,7 @@ public class DataWriterToTable implements DataWriter<List<ExcelRowData>> {
             boolean first = true;
             for (int i = 0; i < items.size(); i++) {
                 if (!columnExists(items.get(i).getName())) continue;
-                ColumnItem item = items.get(i);
+                ExcelImportConfig.ColumnItem item = items.get(i);
                 if (inKeyColumns(item.getName())) continue;
 
                 if (!first) sbSQL.append(",");

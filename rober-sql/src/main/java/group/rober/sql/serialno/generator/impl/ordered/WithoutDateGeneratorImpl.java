@@ -1,9 +1,9 @@
 package group.rober.sql.serialno.generator.impl.ordered;
 
-import group.rober.sql.serialno.constants.GeneratorType;
-import group.rober.sql.serialno.model.SerialNoCursor;
 import group.rober.sql.serialno.generator.SerialNoFormatter;
 import group.rober.sql.serialno.generator.SerialNoGenerator;
+import group.rober.sql.serialno.model.SerialNoCursor;
+import group.rober.sql.serialno.constants.GeneratorType;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;

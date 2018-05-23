@@ -1,7 +1,7 @@
 package group.rober.sql.serialno.cursor.mapper;
 
-import group.rober.sql.serialno.model.BatchIncreaseBean;
 import group.rober.sql.serialno.model.SerialNoCursor;
+import group.rober.sql.serialno.model.BatchIncreaseBean;
 import group.rober.sql.serialno.model.SingleIncreaseBean;
 
 /**

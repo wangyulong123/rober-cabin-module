@@ -1,14 +1,14 @@
 package group.rober.dataform.autoconfigure;
 
-import group.rober.dataform.DataFormConsts;
-import group.rober.dataform.handler.impl.BeanDataListHandler;
 import group.rober.dataform.handler.impl.BeanDataOneHandler;
-import group.rober.dataform.handler.impl.MapDataListHandler;
 import group.rober.dataform.handler.impl.MapDataOneHandler;
 import group.rober.dataform.mapper.DataFormMapper;
-import group.rober.dataform.mapper.impl.DataFormMapperDBTableImpl;
 import group.rober.dataform.mapper.impl.DataFormMapperXMLFileImpl;
 import group.rober.dataform.tags.DataFormTags;
+import group.rober.dataform.DataFormConsts;
+import group.rober.dataform.handler.impl.BeanDataListHandler;
+import group.rober.dataform.handler.impl.MapDataListHandler;
+import group.rober.dataform.mapper.impl.DataFormMapperDBTableImpl;
 import group.rober.runtime.kit.ListKit;
 import group.rober.sql.core.DataAccessor;
 import group.rober.sql.core.MapDataAccessor;

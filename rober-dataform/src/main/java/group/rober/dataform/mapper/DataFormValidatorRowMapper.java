@@ -1,9 +1,7 @@
 package group.rober.dataform.mapper;
 
-import group.rober.dataform.model.DataFormElement;
-import group.rober.dataform.model.DataFormFilter;
-import group.rober.dataform.model.types.ElementFilterComparePattern;
 import group.rober.dataform.model.types.ElementValidatorMode;
+import group.rober.dataform.model.DataFormElement;
 import group.rober.dataform.model.types.ElementValidatorRunAt;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Component;

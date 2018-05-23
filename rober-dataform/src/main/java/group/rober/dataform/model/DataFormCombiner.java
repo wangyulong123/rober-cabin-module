@@ -1,6 +1,5 @@
 package group.rober.dataform.model;
 
-import group.rober.base.dict.model.DictItemEntry;
 import group.rober.base.dict.model.DictItemNode;
 
 import java.util.List;

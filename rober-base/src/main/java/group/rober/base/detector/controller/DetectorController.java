@@ -1,9 +1,9 @@
 package group.rober.base.detector.controller;
 
 import group.rober.base.detector.*;
+import group.rober.base.detector.service.DetectorService;
 import group.rober.base.detector.model.Detector;
 import group.rober.base.detector.model.DetectorItem;
-import group.rober.base.detector.service.DetectorService;
 import group.rober.runtime.holder.ApplicationContextHolder;
 import group.rober.runtime.holder.WebHolder;
 import group.rober.runtime.kit.BeanKit;
@@ -66,7 +66,7 @@ public class DetectorController {
      * @return
      */
     @GetMapping("/detector/exec/{detectorCode}/{itemCode}")
-    public DetectorMessage exec(@PathVariable("detectorCode") String detectorCode,@PathVariable("itemCode") String itemCode){
+    public DetectorMessage exec(@PathVariable("detectorCode") String detectorCode, @PathVariable("itemCode") String itemCode){
         DetectorMessage message = new DetectorMessage();
 
         MapData params = new MapData();

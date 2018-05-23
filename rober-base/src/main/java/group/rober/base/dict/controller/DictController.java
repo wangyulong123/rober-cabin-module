@@ -1,8 +1,8 @@
 package group.rober.base.dict.controller;
 
-import group.rober.base.dict.model.DictEntry;
 import group.rober.base.dict.model.DictItemNode;
 import group.rober.base.dict.service.DictService;
+import group.rober.base.dict.model.DictEntry;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,7 +1,7 @@
 package group.rober.office.excel.imports.intercept;
 
-import group.rober.office.excel.imports.config.ExcelImportConfig;
 import group.rober.office.excel.reader.ExcelRowData;
+import group.rober.office.excel.imports.config.ExcelImportConfig;
 
 import java.util.List;
 
@@ -22,7 +22,7 @@ public class InterceptHelper {
 	 * @throws InterceptException
 	 */
 	public static void beforeReadRow(List<DataProcessIntercept> interceptList,
-									 ExcelRowData rowData, ExcelImportConfig config)
+                                     ExcelRowData rowData, ExcelImportConfig config)
 			throws InterceptException {
 		if(interceptList==null||interceptList.size()==0)return;
 		for(int i=0;i<interceptList.size();i++){

@@ -9,7 +9,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import javax.sql.DataSource;
 import java.util.regex.Pattern;
 
-public class SqlDialectTest extends BaseTest{
+public class SqlDialectTest extends BaseTest {
 
     @Autowired
     protected DataAccessor dataAccessor;

@@ -2,9 +2,9 @@ package group.rober.sql.serialno.generator.impl.ordered;
 
 import group.rober.runtime.kit.DateKit;
 import group.rober.sql.serialno.constants.DateFormat;
-import group.rober.sql.serialno.model.SerialNoCursor;
 import group.rober.sql.serialno.generator.SerialNoFormatter;
 import group.rober.sql.serialno.generator.WithinDateGenerator;
+import group.rober.sql.serialno.model.SerialNoCursor;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 

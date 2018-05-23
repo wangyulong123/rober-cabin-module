@@ -1,11 +1,11 @@
 package group.rober.dataform.util;
 
+import group.rober.dataform.model.types.ElementValidatorMode;
 import group.rober.dataform.exception.DataFormException;
 import group.rober.dataform.exception.ValidatorException;
 import group.rober.dataform.handler.DataObjectHandler;
 import group.rober.dataform.model.DataForm;
 import group.rober.dataform.model.DataFormElement;
-import group.rober.dataform.model.types.ElementValidatorMode;
 import group.rober.dataform.model.types.ElementValidatorRunAt;
 import group.rober.dataform.validator.ValidateRecord;
 import group.rober.dataform.validator.ValidateResult;

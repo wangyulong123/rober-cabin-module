@@ -1,13 +1,11 @@
 package group.rober.office.word;
 
 import java.awt.*;
-import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.regex.Pattern;
 
 import com.aspose.words.*;
 import org.junit.BeforeClass;
