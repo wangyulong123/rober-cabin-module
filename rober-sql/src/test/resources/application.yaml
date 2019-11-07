@@ -14,9 +14,9 @@ spring:
 #    username: root
 #    password: maxwell.1
     driver-class-name: oracle.jdbc.driver.OracleDriver
-    url: jdbc:oracle:thin:@192.168.60.46:1521/orcl
-    username: AMIXDATA
-    password: Amars0ft
+    url: jdbc:oracle:thin:@192.168.61.52:1521/orcl
+    username: amix
+    password: amars0ft
     druid:
       initial-size: 30
       max-active: 50

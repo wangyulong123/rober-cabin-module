@@ -1,12 +1,18 @@
 server: { port: 8080,contextPath: /runtime ,sessionTimeout: 30}
 
 spring:
+  autoconfigure:
+    exclude: [org.activiti.spring.boot.SecurityAutoConfiguration,org.activiti.spring.boot.JpaProcessEngineAutoConfiguration,org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration]
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1/jeki?useUnicode=true&characterEncoding=UTF-8
-    username: root
-    password: Amars0ft
+#    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://127.0.0.1/jeki?useUnicode=true&characterEncoding=UTF-8
+#    username: root
+#    password: Amars0ft
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@192.168.61.52:1521/orcl
+    username: amix
+    password: amars0ft
     #打开PSCache，并且指定每个连接上PSCache的大小
     pool-prepared-statements: true
     max-pool-prepared-statement-per-connection-size: 20

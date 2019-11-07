@@ -24,6 +24,7 @@ public class SqlStarterTest extends BaseTest {
 
     @Test
     public void runtimeTest(){
+        System.err.println("=====数据源====="+dataSource);
         Assert.assertNotNull(dataSource);
         Assert.assertNotNull(jdbcTemplate);
         Assert.assertNotNull(parameterJdbcTemplate);

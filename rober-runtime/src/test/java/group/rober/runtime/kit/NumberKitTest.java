@@ -6,7 +6,7 @@ import java.util.Date;
 
 public class NumberKitTest {
 
-//    @Test
+    @Test
     public void test36Radix(){
         System.out.println(NumberKit.convert36Radix(2017));
         System.out.println(NumberKit.convert36Radix(17));
@@ -18,7 +18,7 @@ public class NumberKitTest {
         System.out.println(NumberKit.convert36Radix(20170819));
     }
 
-//    @Test
+    @Test
     public void testNanoTime(){
         Long nano = System.nanoTime();
         Long millis = nano / 1000000;

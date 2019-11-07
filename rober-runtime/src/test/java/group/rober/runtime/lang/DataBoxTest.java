@@ -1,5 +1,7 @@
 package group.rober.runtime.lang;
 
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import group.rober.runtime.entity.Person;
 import group.rober.runtime.kit.JSONKit;
 import group.rober.runtime.kit.DateKit;
@@ -8,6 +10,7 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -61,8 +64,19 @@ public class DataBoxTest {
     public ExpectedException thrown= ExpectedException.none();
 
     @Test
-    public void testToJson(){
+    public void testToJson() throws IOException {
         System.out.println(JSONKit.toJsonString(dx));
+        /**
+         * 美化json
+         */
+        String jsonStr = JSONKit.toJsonString(dx);
+        ObjectMapper objectMapper = new ObjectMapper();
+        // 允许没有引号的字段名（非标准）
+         objectMapper.configure(JsonParser.Feature.ALLOW_UNQUOTED_FIELD_NAMES, true);
+        // 允许单引号（非标准）
+         objectMapper.configure(JsonParser.Feature.ALLOW_SINGLE_QUOTES, true);
+         Object json = objectMapper.readValue(jsonStr, Object.class);
+        System.out.println(objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(json));
     }
 
     @Test

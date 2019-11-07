@@ -8,6 +8,7 @@ public class StringKitTest {
     public void test01(){
         System.out.println(StringUtils.join(StringUtils.splitByCharacterTypeCamelCase("PersonName"),"_"));
         System.out.println(StringUtils.join(StringUtils.splitByCharacterType("PersonName"),"_"));
+//        System.out.println(StringUtils.join(StringUtils.s,"_"));
     }
 
     @Test
